@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+.rose-container {
+    position: relative;
+    height: 300px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.rose-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 150px;
+    background-color: green;
+    transform: translateX(-50%);
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.leaf-left {
+    bottom: 50px;
+    left: calc(50% - 25px);
+    transform: rotate(-30deg);
+}
+
+.leaf-right {
+    bottom: 50px;
+    left: calc(50% + 5px);
+    transform: rotate(30deg);
+}
+
+.rose {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
+}
+
+.petal {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.petal1 {
+    top: 0;
+    left: 20px;
+}
+
+.petal2 {
+    top: 10px;
+    left: 40px;
+}
+
+.petal3 {
+    top: 30px;
+    left: 0;
+}
+
+.petal4 {
+    top: 30px;
+    left: 40px;
+}
+
+.petal5 {
+    top: 60px;
+    left: 20px;
+}
+
+.petal6 {
+    top: 60px;
+    left: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
